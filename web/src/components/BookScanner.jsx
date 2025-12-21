@@ -62,16 +62,20 @@ const BookScanner = ({ onBookIdentified }) => {
 
   const parseUrlForBook = (url) => {
     try {
-      // Amazon URL pattern
-      if (url.includes('amazon.com')) {
+      // Parse the URL to validate hostname
+      const urlObj = new URL(url);
+      const hostname = urlObj.hostname.toLowerCase();
+      
+      // Amazon URL pattern - validate hostname
+      if (hostname === 'www.amazon.com' || hostname === 'amazon.com' || hostname.endsWith('.amazon.com')) {
         const isbnMatch = url.match(/\/dp\/([A-Z0-9]{10})/i) || url.match(/\/gp\/product\/([A-Z0-9]{10})/i);
         if (isbnMatch) {
           return { isbn: isbnMatch[1] };
         }
       }
       
-      // Goodreads URL pattern
-      if (url.includes('goodreads.com')) {
+      // Goodreads URL pattern - validate hostname
+      if (hostname === 'www.goodreads.com' || hostname === 'goodreads.com' || hostname.endsWith('.goodreads.com')) {
         const titleMatch = url.match(/\/book\/show\/[^/]+\/([^?]+)/);
         if (titleMatch) {
           const title = titleMatch[1].replace(/_/g, ' ');
