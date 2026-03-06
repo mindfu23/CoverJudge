@@ -1,6 +1,6 @@
 # CoverJudge
 
-A cross-platform application (website, iOS, and Android) that allows users to scan book covers or provide URLs to get book information and AI-generated summaries, with affiliate links for purchasing.
+A cross-platform application (website, iOS, and Android) that allows users to scan book covers or provide URLs to get book information, AI-generated summaries, library availability, and affiliate links for purchasing.
 
 ## 🚀 Features
 
@@ -11,6 +11,10 @@ A cross-platform application (website, iOS, and Android) that allows users to sc
   - Google Gemini
   - Anthropic Claude
   - Perplexity AI
+- **🏛️ Library Availability**: Find the book at a library near you:
+  - WorldCat integration for print copies at nearby libraries
+  - Open Library for free ebook lending
+  - No API keys required — works out of the box
 - **🛒 Affiliate Links**: Direct purchase links with affiliate tracking for:
   - Amazon Associates
   - Barnes & Noble
@@ -127,6 +131,7 @@ CoverJudge/
 │   │   │   ├── BookScanner.jsx   # Photo upload and URL input
 │   │   │   ├── BookInfo.jsx      # Display book information
 │   │   │   ├── AISummary.jsx     # AI summary generation
+│   │   │   ├── LibraryAvailability.jsx # Library search links
 │   │   │   └── AffiliateLinks.jsx # Purchase links
 │   │   ├── services/             # API services
 │   │   │   ├── ai/               # AI provider integrations
@@ -135,8 +140,9 @@ CoverJudge/
 │   │   │   │   ├── claude.js
 │   │   │   │   └── perplexity.js
 │   │   │   ├── books/            # Book information services
-│   │   │   │   ├── googleBooks.js
+│   │   │   │   │   ├── googleBooks.js
 │   │   │   │   ├── openLibrary.js
+│   │   │   │   ├── libraryAvailability.js
 │   │   │   │   └── ocr.js
 │   │   │   └── affiliates/       # Affiliate link generators
 │   │   │       └── affiliateService.js
