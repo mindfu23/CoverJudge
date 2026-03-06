@@ -20,7 +20,7 @@ export const generateSummary = async (bookInfo) => {
     const response = await axios.post(
       PERPLEXITY_API_URL,
       {
-        model: 'llama-3.1-sonar-small-128k-online',
+        model: 'sonar',
         messages: [
           {
             role: 'system',

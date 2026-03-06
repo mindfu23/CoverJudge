@@ -20,7 +20,7 @@ export const generateSummary = async (bookInfo) => {
     const response = await axios.post(
       CLAUDE_API_URL,
       {
-        model: 'claude-3-5-sonnet-20241022',
+        model: 'claude-sonnet-4-20250514',
         max_tokens: 1000,
         messages: [
           {
