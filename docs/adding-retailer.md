@@ -1,10 +1,10 @@
 # Adding a New Retailer
 
-This guide explains how to add a new book retailer with affiliate links to BookLearner.
+This guide explains how to add a new book retailer with affiliate links to CoverJudge.
 
 ## Overview
 
-BookLearner uses a template-based affiliate link system that makes it easy to add new retailers. All retailer configurations are centralized in `web/src/services/affiliates/affiliateService.js`.
+CoverJudge uses a template-based affiliate link system that makes it easy to add new retailers. All retailer configurations are centralized in `web/src/services/affiliates/affiliateService.js`.
 
 ## Steps to Add a New Retailer
 

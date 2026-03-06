@@ -1,11 +1,11 @@
 # Deployment Guide
 
-This guide covers deployment options for BookLearner.
+This guide covers deployment options for CoverJudge.
 
 ## Netlify Deployment (Recommended)
 
 ### Prerequisites
-- GitHub account with the BookLearner repository
+- GitHub account with the CoverJudge repository
 - Netlify account (free tier is sufficient)
 
 ### Step-by-Step Deployment
@@ -15,7 +15,7 @@ This guide covers deployment options for BookLearner.
 1. Log in to [Netlify](https://app.netlify.com)
 2. Click "Add new site" → "Import an existing project"
 3. Choose "GitHub" as your Git provider
-4. Select the `BookLarner` repository
+4. Select the `CoverJudge` repository
 5. Configure build settings (or use netlify.toml):
    - **Base directory**: `web`
    - **Build command**: `npm install && npm run build`

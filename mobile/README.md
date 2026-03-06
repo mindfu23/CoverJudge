@@ -1,4 +1,4 @@
-# BookLearner Mobile Apps
+# CoverJudge Mobile Apps
 
 This directory will contain the React Native mobile applications for iOS and Android.
 

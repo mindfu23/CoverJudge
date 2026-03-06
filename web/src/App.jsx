@@ -65,9 +65,9 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>📚 BookLearner</h1>
+        <h1>📚 CoverJudge</h1>
         <p className="app-subtitle">
-          Discover books, get AI-powered summaries, and find where to buy
+          Scan a cover, get the story, find it at your library
         </p>
       </header>
 

@@ -27,8 +27,8 @@ A cross-platform application (website, iOS, and Android) that allows users to sc
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/mindfu23/BookLarner.git
-   cd BookLarner
+   git clone https://github.com/mindfu23/CoverJudge.git
+   cd CoverJudge
    ```
 
 2. **Install dependencies**
@@ -120,7 +120,7 @@ React Native mobile applications for iOS and Android are planned for future rele
 ## 🏗️ Project Structure
 
 ```
-BookLarner/
+CoverJudge/
 ├── web/                          # Web application
 │   ├── src/
 │   │   ├── components/           # React components
@@ -151,7 +151,7 @@ BookLarner/
 └── README.md
 ```
 
-## 🔧 Extending BookLearner
+## 🔧 Extending CoverJudge
 
 ### Adding a New AI Provider
 

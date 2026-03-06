@@ -1,10 +1,10 @@
 # Adding a New AI Provider
 
-This guide explains how to add a new AI provider to BookLearner.
+This guide explains how to add a new AI provider to CoverJudge.
 
 ## Overview
 
-BookLearner uses a modular approach for AI providers. Each provider is implemented as a separate service module that exports a `generateSummary` function.
+CoverJudge uses a modular approach for AI providers. Each provider is implemented as a separate service module that exports a `generateSummary` function.
 
 ## Steps to Add a New AI Provider
 
