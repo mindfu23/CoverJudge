@@ -1,4 +1,4 @@
-# BookLearner
+# CoverJudge
 
 A cross-platform application (website, iOS, and Android) that allows users to scan book covers or provide URLs to get book information and AI-generated summaries, with affiliate links for purchasing.
 
