@@ -3,6 +3,7 @@ import BookScanner from './components/BookScanner';
 import BookInfo from './components/BookInfo';
 import AISummary from './components/AISummary';
 import AffiliateLinks from './components/AffiliateLinks';
+import LibraryAvailability from './components/LibraryAvailability';
 import { searchBooks, getBookByISBN } from './services/books/googleBooks';
 import * as openLibrary from './services/books/openLibrary';
 import './App.css';
@@ -102,6 +103,7 @@ function App() {
             
             <BookInfo bookInfo={bookInfo} />
             <AISummary bookInfo={bookInfo} />
+            <LibraryAvailability bookInfo={bookInfo} />
             <AffiliateLinks bookInfo={bookInfo} />
           </>
         )}
